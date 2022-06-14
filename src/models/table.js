@@ -28,10 +28,10 @@ const Nft = database.sequelize.define("nft", {
 }
 );
 
-/* const initTable = async () =>{
+const initTable = async () =>{
     await Nft.sync();
   }
   
-  initTable(); */
+  initTable();
 
 module.exports = Nft;
