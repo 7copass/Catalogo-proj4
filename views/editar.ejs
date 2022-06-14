@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Update a NFT</title>
+  </head>
+  <body>
+    <div id="title-form">
+      <h2>Update a NFT</h2>
+    </div>
+
+    <div id="form-container">
+      <form action="/editar/<%= nft.id%>" method="post">
+        <label for="">Name:</label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          value="<%=nft.nome%>"
+          required
+        />
+
+        <label for="">Value:</label>
+        <input
+          type="text"
+          name="valor"
+          id="valor"
+          value="<%= nft.valor%>"
+          required
+        />
+
+      
+        <label for="">Image link:</label>
+        <input
+          type="text"
+          name="imagem"
+          id="imagem"
+          value="<%= nft.imagem%>"
+          required
+        />
+        <div class="submit">
+          <button class="btn-submit" type="submit">Submit</button>
+        </div>
+      </form>
+
+      
+    </div>
+  </body>
+</html>
